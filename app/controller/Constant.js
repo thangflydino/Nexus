@@ -7,12 +7,12 @@ export default {
         height: Dimensions.get('window').height
     },
     screenName: {
-      TabBar:'TabBar',
-      Login:'Login',
-      Home:'Home',
-      History:'History',
-      Exchange:'Exchange',
-      Profile:'Profile',
+        TabBar: 'TabBar',
+        Login: 'Login',
+        Home: 'Home',
+        History: 'History',
+        Exchange: 'Exchange',
+        Profile: 'Profile',
     },
     color: {
         green: '#3FC44E',
@@ -29,11 +29,12 @@ export default {
 
     },
     icons: {
-      background: require('../assets/images/img_bg.png'),
-      tabbar_home: require('../assets/images/tabbar/ic_home.png'),
-      tabbar_history: require('../assets/images/tabbar/ic_history.png'),
-      tabbar_convert: require('../assets/images/tabbar/ic_convert.png'),
-      tabbar_profile: require('../assets/images/tabbar/ic_profile.png'),
+        background: require('../assets/images/img_bg.png'),
+        tabbar_home: require('../assets/images/tabbar/ic_home.png'),
+        tabbar_history: require('../assets/images/tabbar/ic_history.png'),
+        tabbar_convert: require('../assets/images/tabbar/ic_convert.png'),
+        tabbar_profile: require('../assets/images/tabbar/ic_profile.png'),
+        topBG: require('../assets/images/img_top_bg.png'),
     },
     fonts: {
         poppinsBold: 'Poppins-Bold',

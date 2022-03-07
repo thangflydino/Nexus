@@ -1,13 +1,23 @@
-import { StyleSheet, Text, View,TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, ScrollView } from 'react-native'
 import React from 'react'
-import Icon from 'react-native-vector-icons/Ionicons'
+import Background from '../common/Background'
+import Header from '../common/Header'
+
 const Home = () => {
 
   return (
-    <View style={styles.Container}>
-      <Text style={styles.text}>Hello world!</Text>
-      <Text style={styles.text2}>Hello world!</Text>
-      <Icon name='home' size={30} color='red'/>
+    <View style={{ flex: 1, backgroundColor: 'green' }}>
+      <Background />
+      <SafeAreaView style={{ flex: 1 }}>
+        <Header title='Home' />
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          style={styles.scrollView}>
+          <View style={styles.contentView}>
+
+          </View>
+        </ScrollView>
+      </SafeAreaView>
     </View>
   )
 }
@@ -15,17 +25,29 @@ const Home = () => {
 export default Home
 
 const styles = StyleSheet.create({
-  Container:{
-    flex:1,
-    justifyContent:"center",
-    alignItems:'center'
+  contentView: {
+    marginHorizontal: 20,
+    marginTop: 25,
+    marginBottom: 20,
+    backgroundColor: 'white',
+    height: 500,
+    borderRadius: 10
   },
-  text:{
-    fontSize:30,
-    fontFamily:'Poppins-Light',
+  scrollView: {
+    flex: 1,
+    marginTop: 20
   },
-  text2:{
-    fontSize:30,
-    fontFamily:'RobotoSlab-Black'
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: 'center'
+  },
+  text: {
+    fontSize: 30,
+    fontFamily: 'Poppins-Light',
+  },
+  text2: {
+    fontSize: 30,
+    fontFamily: 'RobotoSlab-Black'
   }
 })
